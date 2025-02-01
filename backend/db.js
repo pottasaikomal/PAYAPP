@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import { DB_URL } from './config.js';
 mongoose.connect(DB_URL);
+console.log(DB_URL)
 const UserSchema = new mongoose.Schema({
     userName: {
         type: String,
